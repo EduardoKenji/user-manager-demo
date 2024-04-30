@@ -1,0 +1,7 @@
+CREATED 1 User IN THE 'users' TABLE at '2024-04-30 01:35:16'
+
+User id: 15
+User name: saddasdsdasdas
+User email: adssdaasdadssad@gmail.com
+User address: Test St, 656
+User phone_number: 55123
