@@ -75,12 +75,12 @@ public class UserManagerFileWriter {
         // If collision happens in the same milliseconds, rename file to ..._1.txt, ..._2.txt and keep checking if it exists
         int count = 0;
         String absoluteTimeInMillis = Long.toString(System.currentTimeMillis());
-        String fullFileName = DATABASE_CHANGELOGS_FOLDER+fileName+absoluteTimeInMillis+"_"+String.valueOf(count)+"_"+DATABASE_CHANGELOGS_FILE_TYPE;
-        File file = new File(fullFileName);
+        String fullFileName = DATABASE_CHANGELOGS_FOLDER+fileName+absoluteTimeInMillis+"_"+count+"_"+DATABASE_CHANGELOGS_FILE_TYPE;
+        File file;
         while((file = new File(fullFileName)).exists())
         {
             count += 1;
-            fullFileName = DATABASE_CHANGELOGS_FOLDER+fileName+absoluteTimeInMillis+"_"+String.valueOf(count)+"_"+DATABASE_CHANGELOGS_FILE_TYPE;
+            fullFileName = DATABASE_CHANGELOGS_FOLDER+fileName+absoluteTimeInMillis+"_"+count+"_"+DATABASE_CHANGELOGS_FILE_TYPE;
         }
 
         try {
