@@ -44,6 +44,10 @@ public class UserManagerFileWriter {
     }
 
     public String getFormatedData(String fileName, User user) {
+        if(user == null) {
+            throw new UserManagerException("User is null.", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
         if(!fileNameToDescriptionMap.containsKey(fileName)) { // Check if file name is mapped to a request that modifies the database
             throw new UserManagerException("Database changelogs file name isn't mapped.", HttpStatus.INTERNAL_SERVER_ERROR);
         }
