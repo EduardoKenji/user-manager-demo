@@ -1,0 +1,7 @@
+DELETED 1 User IN THE 'users' TABLE at '2024-04-30 22:40:37'
+
+User id: 16
+User name: test_update
+User email: test_update@gmail.com
+User address: Test Update St, 12345
+User phone_number: 11987654321

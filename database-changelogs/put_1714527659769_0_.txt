@@ -1,6 +1,6 @@
-UPDATED 1 User IN THE 'users' TABLE at '2024-04-30 01:36:05'
+UPDATED 1 User IN THE 'users' TABLE at '2024-04-30 22:40:59'
 
-User id: 15
+User id: 17
 User name: test_update
 User email: test_update@gmail.com
 User address: Test Update St, 12345

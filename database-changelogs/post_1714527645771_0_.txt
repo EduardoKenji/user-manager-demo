@@ -1,6 +1,6 @@
-CREATED 1 User IN THE 'users' TABLE at '2024-04-30 01:35:16'
+CREATED 1 User IN THE 'users' TABLE at '2024-04-30 22:40:45'
 
-User id: 15
+User id: 17
 User name: saddasdsdasdas
 User email: adssdaasdadssad@gmail.com
 User address: Test St, 656

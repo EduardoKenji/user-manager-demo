@@ -1,7 +1,0 @@
-DELETED 1 User IN THE 'users' TABLE at '2024-04-30 01:34:26'
-
-User id: 14
-User name: saddasdsdasdas
-User email: adssdaasdadssad@gmail.com
-User address: Test St, 656
-User phone_number: 55123
