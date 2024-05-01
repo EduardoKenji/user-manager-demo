@@ -1,4 +1,4 @@
-Instructions - How to create a PostgreSQL database instance in Amazon RDS:
+# Instructions - How to create a PostgreSQL database instance in Amazon RDS:
 
 1) Log into the AWS console, navigate to the "RDS" => Databases section and click on the "Create Database" button
 
