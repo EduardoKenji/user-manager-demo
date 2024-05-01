@@ -34,6 +34,6 @@ Sequence diagram describing the lifecycle of a request to get all users (GET /us
 
 <img src='./github-images/User Manager GET users - Sequence diagram.png' alt='Frontend Example' width="1440">
 
-Current frontend appearance:
+Current frontend appearance for the User Manager:
 
 <img src='./github-images/Frontend Example.png' alt='Frontend Example' width=60%>
