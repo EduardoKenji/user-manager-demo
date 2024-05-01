@@ -17,7 +17,7 @@ The backend and the frontend are separated and they need to be running simultane
 1) Prerequisites:
 - A PostgreSQL database instance running on Amazon RDS
 - /backend/env.properties
-2) [Click here to follow the "./backend/README.md" to setup the Amazon RDS and env.properties file](https://github.com/EduardoKenji/user-manager-demo/blob/master/backend/README.md)
+2) [Click here to see the "./backend/README.md" and get instructions to setup the Amazon RDS and env.properties file](https://github.com/EduardoKenji/user-manager-demo/blob/master/backend/README.md)
 
 To run the backend:
 ```
@@ -30,6 +30,12 @@ To run the frontend:
 cd frontend
 npm install
 ng serve
+```
+
+To run the backend tests:
+```
+cd backend
+mvn clean test
 ```
 
 Current system design for the User Manager:
