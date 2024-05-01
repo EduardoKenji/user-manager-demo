@@ -26,6 +26,10 @@ npm install
 ng serve
 ```
 
+Current system design for the User Manager:
+
+<img src='./github-images/System Design - User Manager.png' alt='Frontend Example' width=60%>
+
 Sequence diagram describing the lifecycle of a request to get all users (GET /users) in the User Manager (click on the image for better zoom):
 
 <img src='./github-images/User Manager GET users - Sequence diagram.png' alt='Frontend Example' width="1440">
