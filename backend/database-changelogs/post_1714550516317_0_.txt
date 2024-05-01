@@ -1,0 +1,7 @@
+CREATED 1 User IN THE 'users' TABLE at '2024-05-01 05:01:56'
+
+User id: 20
+User name: test_update
+User email: test_update@gmail.com
+User address: Test Update St, 12345 - Apt 1
+User phone_number: 11987654321

@@ -1,7 +1,0 @@
-CREATED 1 User IN THE 'users' TABLE at '2024-05-01 03:53:01'
-
-User id: 19
-User name: Robert Oswald
-User email: robert.oswald@gmail.com
-User address: Some Street, 123 - Apt. 141
-User phone_number: 11954672341

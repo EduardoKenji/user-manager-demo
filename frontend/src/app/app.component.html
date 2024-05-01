@@ -4,6 +4,7 @@
 
   <h2>Users list</h2>
   <app-user-display *ngFor="let user of users"
-                     [user]="user"
+                    (deleteUserEvent)="deleteUser($event)"
+                    [user]="user"
   />
 </div>

@@ -1,6 +1,6 @@
-DELETED 1 User IN THE 'users' TABLE at '2024-05-01 02:31:59'
+DELETED 1 User IN THE 'users' TABLE at '2024-05-01 05:00:40'
 
-User id: 17
+User id: 18
 User name: test_update
 User email: test_update@gmail.com
 User address: Test Update St, 12345
