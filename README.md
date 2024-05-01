@@ -12,6 +12,7 @@ Technologies utilized:
 - AWS RDS
 
 The backend and the frontend are separated and they need to be running simultaneously.
+
 To run the backend:
 ```
 cd backend
