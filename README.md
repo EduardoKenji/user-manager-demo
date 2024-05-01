@@ -11,3 +11,16 @@ Technologies utilized:
 - PostgreSQL
 - AWS RDS
 
+The backend and the frontend are separated and they need to be running simultaneously.
+To run the backend:
+```
+cd backend
+mvn spring-boot:run
+```
+
+To run the frontend:
+```
+cd frontend
+npm install
+ng serve
+```
