@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.HttpStatus;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
@@ -82,6 +83,7 @@ public class UserManagerFileWriterTests {
         User user = new User(0L, "Test User", "test.user@gmail.com", "Test St, 123", "(11)98765-4321");
         UserManagerException exception = assertThrows(UserManagerException.class, () -> userManagerFileWriter.getFormatedData("Invalid file name", user));
         assertEquals(exception.getMessage(), "Database changelogs file name isn't mapped.");
+        assertEquals(exception.getStatus(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
     @Test
@@ -91,5 +93,6 @@ public class UserManagerFileWriterTests {
         User user = null;
         UserManagerException exception = assertThrows(UserManagerException.class, () -> userManagerFileWriter.getFormatedData(UserManagerFileWriter.POST_FILE, user));
         assertEquals(exception.getMessage(), "User is null.");
+        assertEquals(exception.getStatus(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }
