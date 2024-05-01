@@ -25,3 +25,7 @@ cd frontend
 npm install
 ng serve
 ```
+
+Current frontend appearance:
+
+<img src='./github-images/Frontend Example.png' alt='Frontend Example' width=60%>
