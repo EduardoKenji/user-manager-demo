@@ -1,0 +1,10 @@
+.user-form-field {
+  max-width: 300px;
+  width: 100%;
+}
+
+.user-form {
+  min-width: 50px;
+  max-width: 300px;
+  width: 100%;
+}

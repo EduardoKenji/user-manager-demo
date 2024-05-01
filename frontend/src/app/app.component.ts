@@ -17,4 +17,8 @@ export class AppComponent {
       "http://localhost:8080/users"
     ).subscribe(data => this.users = data);
   }
+
+  appendData(newUser: any): void {
+    this.users.push(newUser);
+  }
 }

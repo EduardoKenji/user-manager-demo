@@ -1,4 +1,4 @@
-UPDATED 1 User IN THE 'users' TABLE at '2024-04-30 22:40:59'
+DELETED 1 User IN THE 'users' TABLE at '2024-05-01 02:31:59'
 
 User id: 17
 User name: test_update
