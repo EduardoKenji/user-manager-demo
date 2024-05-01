@@ -1,4 +1,4 @@
-# Instructions - How to create a PostgreSQL database instance in Amazon RDS:
+# Instructions - How to create a PostgreSQL database instance in Amazon RDS and setup the env.properties file:
 
 1) Log into the AWS console, navigate to the "RDS" => Databases section and click on the "Create Database" button
 
@@ -16,10 +16,18 @@
 
 <img src='./../github-images/Amazon RDS Endpoint Location.png' alt='Frontend Example' width=75%>
 
-5) Create an env.properties file on this folder (/backend) with this format:
+5) Create an env.properties file on the "/backend" folder with this format:
 
 ```
 RDS_DB_ENDPOINT=<endpoint>
 RDS_DB_USER=<master username>
 RDS_DB_PASSWORD=<master password>
 ```
+
+6) The "/backend" folder should now have the env.properties file:
+
+<img src='./../github-images/env properties file location.png' alt='Frontend Example' width=65%>
+
+7) The application.properties (/backend/src/main/resources/application.properties) file will automatically include the information from env.properties:
+
+<img src='./../github-images/application properties.png' alt='Frontend Example' width=60%> 
