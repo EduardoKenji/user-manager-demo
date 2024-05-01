@@ -32,11 +32,18 @@ npm install
 ng serve
 ```
 
+How to access the frontend when it's online:
+```
+http://localhost:4200/
+```
+
 To run the backend tests:
 ```
 cd backend
 mvn clean test
 ```
+
+
 
 Current system design for the User Manager:
 
