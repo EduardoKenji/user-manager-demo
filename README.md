@@ -17,12 +17,7 @@ The backend and the frontend are separated and they need to be running simultane
 1) Prerequisites:
 - A PostgreSQL database instance running on Amazon RDS
 - /backend/env.properties
-2) After setting up the database on Amazon RDS, a env.properties should be created in the /backend folder with this format:
-```
-RDS_DB_ENDPOINT=<endpoint>
-RDS_DB_USER=<master username>
-RDS_DB_PASSWORD=<master password>
-```
+2) [Click here to follow the "./backend/README.md" to setup the Amazon RDS and env.properties file](https://github.com/EduardoKenji/user-manager-demo/blob/master/backend/README.md)
 
 To run the backend:
 ```
