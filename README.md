@@ -30,7 +30,7 @@ Current system design for the User Manager:
 
 <img src='./github-images/System Design - User Manager.png' alt='Frontend Example' width=60%>
 
-Theoretical system design to horizontally scale the User Manager with AWS cloud components:
+Theoretical system design to horizontally scale the User Manager with AWS cloud components (click on the image for better zoom):
 
 <img src='./github-images/Theoretical System Design - User Manager.png' alt='Frontend Example' width=100%>
 
