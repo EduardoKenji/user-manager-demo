@@ -1,10 +1,9 @@
 <div class="main">
   <h2>Add new user</h2>
-  <app-user-input (newDataEvent)="appendData($event)"/>
+  <app-user-input (newUserEvent)="createUser($event)"/>
 
   <h2>Users list</h2>
-  <app-user-display *ngFor="let user of users"
+  <app-user-wrapper *ngFor="let user of users"
                     (deleteUserEvent)="deleteUser($event)"
-                    [user]="user"
-  />
+                    [user]="user"/>
 </div>

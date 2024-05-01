@@ -14,4 +14,5 @@ import { User } from './../user';
 export class UserDisplayComponent {
   @Input() user: User = new User(0, "", "", "", "");
   @Output() deleteUserEvent = new EventEmitter();
+  @Output() updateUserEvent = new EventEmitter();
 }

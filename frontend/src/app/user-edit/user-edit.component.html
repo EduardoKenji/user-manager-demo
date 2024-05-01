@@ -1,0 +1,24 @@
+<form class="user-form" (ngSubmit)="onSubmit()">
+
+  <mat-form-field class="user-form-field">
+    <mat-label>User full name user.id</mat-label>
+    <input name="name" [(ngModel)]="user.name" required matInput>
+  </mat-form-field>
+
+  <mat-form-field class="user-form-field">
+    <mat-label>User email</mat-label>
+    <input name="email" [(ngModel)]="user.email" required matInput>
+  </mat-form-field>
+
+  <mat-form-field class="user-form-field">
+    <mat-label>User address</mat-label>
+    <input name="address" [(ngModel)]="user.address" required matInput>
+  </mat-form-field>
+
+  <mat-form-field class="user-form-field">
+    <mat-label>User phone number</mat-label>
+    <input name="phoneNumber" [(ngModel)]="user.phoneNumber" required matInput>
+  </mat-form-field>
+
+  <button type="submit" mat-raised-button color="primary">Save</button>
+</form>

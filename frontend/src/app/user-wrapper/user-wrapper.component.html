@@ -1,0 +1,10 @@
+<p>
+  <app-user-edit *ngIf="updatable == true"
+                 (updateUserEvent)="handleSaveUpdated($event)"
+                 [user]="user"/>
+
+  <app-user-display *ngIf="updatable == false"
+                    (deleteUserEvent)="deleteUserEvent.emit($event)"
+                    (updateUserEvent)="handleUpdateClick()"
+                    [user]="user"/>
+</p>

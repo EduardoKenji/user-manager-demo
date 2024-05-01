@@ -1,0 +1,7 @@
+CREATED 1 User IN THE 'users' TABLE at '2024-05-01 06:28:04'
+
+User id: 23
+User name: Example Full User Name
+User email: example_user@gmail.com
+User address: Example St, 123 - Apt. 456
+User phone_number: (11) 97654 1234

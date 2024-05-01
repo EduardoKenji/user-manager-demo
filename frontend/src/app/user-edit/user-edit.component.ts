@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter, ViewChild } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { NgForm, FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { User } from './../user';
@@ -11,24 +11,25 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'app-user-input',
+  selector: 'app-user-edit',
   standalone: true,
   imports: [FormsModule, MatInputModule, MatFormFieldModule,
-            MatIconModule, MatDividerModule, MatButtonModule],
-  templateUrl: './user-input.component.html',
-  styleUrl: './user-input.component.css'
+  MatIconModule, MatDividerModule, MatButtonModule],
+  templateUrl: './user-edit.component.html',
+  styleUrl: './user-edit.component.css'
 })
-export class UserInputComponent {
+export class UserEditComponent {
 
-  @ViewChild("userForm") userForm!: NgForm;
-  @Output() newUserEvent = new EventEmitter();
+  @Input() user: User = new User(0, "", "", "", "");
+
+  @Output() updateUserEvent = new EventEmitter();
 
   constructor(private http: HttpClient) {}
 
   onSubmit(): void {
-    this.http.post<User>(
-      "http://localhost:8080/users",
-      this.userForm.value
-    ).subscribe(data => {this.newUserEvent.emit(data)});
+    this.http.put(
+      "http://localhost:8080/users/" + this.user.id,
+      this.user
+    ).subscribe(data => {this.updateUserEvent.emit(data)});
   }
 }

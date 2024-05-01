@@ -5,6 +5,7 @@
       <mat-card-subtitle>{{user.email}} / {{user.address}} / {{user.phoneNumber}}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-actions align="end">
+      <button mat-button (click)="updateUserEvent.emit(user.id)">Update</button>
       <button mat-button (click)="deleteUserEvent.emit(user.id)">Delete</button>
     </mat-card-actions>
   </mat-card>

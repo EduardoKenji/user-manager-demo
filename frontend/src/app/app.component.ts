@@ -18,13 +18,13 @@ export class AppComponent {
     ).subscribe(data => this.users = data);
   }
 
-  appendData(newUser: any): void {
+  createUser(newUser: any): void {
     this.users.push(newUser);
   }
 
   deleteUser(userId: number): void {
     this.http.delete(
-      "http://localhost:8080/users/" + userId
+      "http://localhost:8080/users/" + userId.toString()
     ).subscribe(data =>
       this.users = this.users.filter((user: User) => user.id != userId)
     );
