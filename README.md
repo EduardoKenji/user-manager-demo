@@ -26,7 +26,7 @@ npm install
 ng serve
 ```
 
-Sequence diagram describing the lifecycle of a request to get all users (GET /users) in the User Manager:
+Sequence diagram describing the lifecycle of a request to get all users (GET /users) in the User Manager (click on the image for better zoom):
 
 <img src='./github-images/User Manager GET users - Sequence diagram.png' alt='Frontend Example' width="1440">
 
