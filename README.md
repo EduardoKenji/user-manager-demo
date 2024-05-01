@@ -10,8 +10,19 @@ Technologies utilized:
 - Angular 17.3.6
 - PostgreSQL
 - AWS RDS
+- JUnit
 
 The backend and the frontend are separated and they need to be running simultaneously.
+
+1) Prerequisites:
+- A PostgreSQL database instance running on Amazon RDS
+- /backend/env.properties
+2) After setting up the database on Amazon RDS, a env.properties should be created in the /backend folder with this format:
+```
+RDS_DB_ENDPOINT=<endpoint>
+RDS_DB_USER=<master username>
+RDS_DB_PASSWORD=<master password>
+```
 
 To run the backend:
 ```
