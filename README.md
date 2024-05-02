@@ -17,7 +17,7 @@ The backend and the frontend are separated and they need to be running simultane
 1) Prerequisites:
 - A PostgreSQL database instance running on Amazon RDS
 - /backend/env.properties
-2) [Click here to see the "./backend/README.md" and get instructions to setup the Amazon RDS and env.properties file](https://github.com/EduardoKenji/user-manager-demo/blob/master/backend/README.md)
+2) [Click here to see the "./backend/README.md" and get instructions on how to setup the Amazon RDS and the env.properties file](https://github.com/EduardoKenji/user-manager-demo/blob/master/backend/README.md)
 
 To run the backend:
 ```
@@ -49,7 +49,7 @@ Current system design for the User Manager:
 
 <img src='./github-images/System Design - User Manager.png' alt='Frontend Example' width=60%>
 
-Theoretical system design to horizontally scale the User Manager with AWS cloud components (click on the image for better zoom):
+Theoretical system design with ideas to horizontally scale the User Manager with AWS cloud components (click on the image for better zoom):
 
 <img src='./github-images/Theoretical System Design - User Manager.png' alt='Frontend Example' width=100%>
 
